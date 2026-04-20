@@ -4,7 +4,7 @@
 	- Enables collaboration whilst ensuring it done safely
 - Continuous delivery (CD) is a practice that produces reliable releases to a chosen environment
 
-### Units
+## Units
 - The smallest unit in CircleCI is a step
 	- A step is a single execution of a task, and CircleCI has predefined steps
 	- The most broad step is the `run` step, which allows you to run a command in a shell
@@ -17,3 +17,8 @@
 - The next unit is a pipeline
 	- This, in my opinion, is badly named as it's just a single execution of a workflow - a more appropriate name would be `workflow run`
 	- Pipelines can have parameters that can be used in smaller units, enabling us to run a single workflow for different use cases
+
+### Reusable configuration
+- It's possible to make parts of the configuration reusable
+	- `executors` - environments that jobs can run in
+	- `commands` - steps that jobs can run
